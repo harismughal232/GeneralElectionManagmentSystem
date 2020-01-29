@@ -127,11 +127,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\63B10652-198E-47AC-8E2C-62BE6B37D91F.jpg" />
+    <Content Include="App_Data\Elections-1280x720.jpg" />
+    <Content Include="App_Data\images.jpg" />
     <Content Include="App_Data\logoofEOCP.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\mystylesheet.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
