@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My General Election Managment System Admin panel</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <--!>sidebar css</--!>
+
+    <style>
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: darkgreen;
+  overflow-x: hidden;
+  padding-top: 50px;
+  margin-top:auto;
+  float:left;
+}
+
+.sidenav li {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size:15px;
+  color:antiquewhite;
+  display: block;
+}
+
+.sidenav li:hover {
+  color:white;
+}
+
+.main{
+  padding: 0px 10px;
+  margin-left:auto;
+  margin-top:auto;
+}
+
+.contantmanager
+{
+    float:left;
+    margin-left:200px;
+}
+
+    </style>
+</head>
+<body>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div style="background-color:darkgreen;color:aliceblue">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Admin", "AdminHome", "Admin", new { area = "" }, new { @class = "navbar-brand" })
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li> <a><span class="glyphicon glyphicon-home" aria-hidden="true"> </span></a></li>
+
+
+                </ul>
+                <ul style="margin-right:10px" class="nav navbar-nav navbar-right">
+                    <li> <a><span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span></a></li>
+                    <li> <a><span class="glyphicon glyphicon-search" aria-hidden="true"> </span></a></li>
+                    <li> <a><span class="glyphicon glyphicon-user" aria-hidden="true"> </span></a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="contantmanager">
+       
+        <ul  style="color:aliceblue" class="sidenav col-lg-3">
+
+            <li>@Html.ActionLink("Manage NA", "Manage_Na", "Admin")</li>
+            <li>@Html.ActionLink("Manage PA", "Manage_Na", "Admin")</li>
+            <li>@Html.ActionLink("Manage Voter", "Manage_Na", "Admin")</li>
+            <li>@Html.ActionLink("Manage Admin", "Manage_Na", "Admin")</li>
+            <li>@Html.ActionLink("Conduct Elections", "Manage_Na", "Admin")</li>
+            <li>@Html.ActionLink("Result", "Manage_Na", "Admin")</li>
+
+
+        </ul>
+        <div class=" container body-content main pre-scrollable">
+            <hr />
+
+            @RenderBody()
+
+            <br />
+            <footer class="contantmanager">
+                <p class="bg-info">&copy; @DateTime.Now.Year - GENERAL ELECTION MANAGMENT SYSTEM</p>
+            </footer>
+        </div>
+        
+
+
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+                    
+
+                    
+
+
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -29,7 +29,7 @@ namespace GeneralElectionManagmentSystem.Controllers
         {
             return View();
         }
-        public ActionResult join_us_now()
+        public ActionResult login()
         {
             return View();
         }

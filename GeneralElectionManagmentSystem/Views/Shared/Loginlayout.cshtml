@@ -1,0 +1,96 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My General Election Managment System</title>
+    <link href="~/Content/css/fontawesome-all.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+   
+    @Styles.Render("~/Content/css")
+
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/fonts/")
+
+    <style>
+
+        .dropdown-toggle:hover .dropdown-item:hover .dropdown:hover .dropdown-menu:hover {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div style="background-color:darkgreen;color:aliceblue">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("GEMS", "Home_page", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Home_page", "Home")</li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown">For voters</a>
+                        <div class="dropdown-menu" style="background-color:black">
+                            <ul style="color:white">
+                                <li style="float:left"><span class="dropdown-item">@Html.ActionLink("How to Register", "join_us_Now", "Home")</span></li>
+                                <li style="float:left">  <span class="dropdown-item">@Html.ActionLink("How to Register", "join_us_Now", "Home")</span></li>
+                                <li> <span class="dropdown-item">@Html.ActionLink("How to Register", "join_us_Now", "Home")</span></li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+
+
+
+
+
+                    <li>@Html.ActionLink("Elections", "Elections", "Home")</li>
+                    <li>@Html.ActionLink("Parties & Candidates", "parties_and_candidates", "Home")</li>
+                    <li>@Html.ActionLink("About us", "About", "Home")</li>
+
+
+
+                </ul>
+                <ul style="margin-right:20px" class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("log in", "login", "Home")</li>
+                    <li> <a><span class="glyphicon glyphicon-user" aria-hidden="true"> </span></a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="body-content">
+
+        <hr />
+        @RenderBody()
+
+
+
+    </div>
+
+    <br />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - GENERAL ELECTION MANAGMENT SYSTEM</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

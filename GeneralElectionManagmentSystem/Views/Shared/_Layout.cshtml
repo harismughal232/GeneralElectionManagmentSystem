@@ -39,12 +39,12 @@
                         <li>@Html.ActionLink("Home", "Home_page", "Home")</li>
 
                         <li class="dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" >For voters</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown">For voters</a>
                             <div class="dropdown-menu" style="background-color:black">
-                               <ul style="color:white">
-                                <li style="float:left"><span  class="dropdown-item">@Html.ActionLink("How to Register", "join_us_Now", "Home")</span></li>
-                              <li style="float:left">  <span class="dropdown-item" ">@Html.ActionLink("How to Register", "join_us_Now", "Home")</span></li>
-                               <li> <span class="dropdown-item" >@Html.ActionLink("How to Register", "join_us_Now", "Home")</span></li>
+                                <ul style="color:white">
+                                    <li style="float:left"><span class="dropdown-item">@Html.ActionLink("How to Register", "join_us_Now", "Home")</span></li>
+                                    <li style="float:left">  <span class="dropdown-item">@Html.ActionLink("How to Register", "join_us_Now", "Home")</span></li>
+                                    <li> <span class="dropdown-item">@Html.ActionLink("How to Register", "join_us_Now", "Home")</span></li>
                                 </ul>
                             </div>
                         </li>
@@ -61,6 +61,10 @@
                         <li>@Html.ActionLink("Join Us Now", "Join_us_now", "Home")</li>
 
 
+                    </ul>
+                    <ul style="margin-right:20px" class="nav navbar-nav navbar-right">
+                        <li>@Html.ActionLink("log in", "login", "Home")</li>
+                        <li> <a><span class="glyphicon glyphicon-user" aria-hidden="true"> </span></a></li>
 
 
                     </ul>
@@ -70,7 +74,7 @@
     
 
 
-    <div class="container body-content">
+    <div class="container-fluid body-content">
         <hr />
         @RenderBody()
  </div>
