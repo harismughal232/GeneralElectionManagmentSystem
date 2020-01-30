@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace GeneralElectionManagmentSystem.Controllers
 {
     public class HomeController : Controller
@@ -38,6 +39,50 @@ namespace GeneralElectionManagmentSystem.Controllers
         {
             return View();
         }
+        public ActionResult howtoregister()
+        {
+            return View();
+        }
+        public ActionResult how_to_vote()
+        {
+            return View();
+        }
+        public ActionResult check_for_validation()
+        {
+            return View();
+        }
+        public ActionResult General_election()
+        {
+            return View();
+        }
+
+        public ActionResult Election_laws()
+        {
+            return View();
+        }
+
+        public ActionResult Election_Rules()
+        {
+            return View();
+        }
+        public ActionResult Party_possition()
+        {
+            return View();
+        }
+        public ActionResult List_of_parties()
+        {
+            return View();
+        }
+
+        public ActionResult Symbols()
+        {
+            return View();
+        }
+        public ActionResult Available_symbols()
+        {
+            return View();
+        }
+
 
     }
 }

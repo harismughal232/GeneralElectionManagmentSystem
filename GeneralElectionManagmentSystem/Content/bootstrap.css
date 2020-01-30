@@ -11,6 +11,19 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color:  cornsilk;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
 body {
     margin: 0;
 }
@@ -4430,7 +4443,7 @@ tbody.collapse.in {
     z-index: 1000;
     display: none;
     float: left;
-    min-width: 160px;
+    min-width: 350px;
     padding: 5px 0;
     margin: 2px 0 0;
     font-size: 14px;

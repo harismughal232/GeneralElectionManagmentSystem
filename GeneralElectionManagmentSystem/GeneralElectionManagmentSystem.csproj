@@ -129,9 +129,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\63B10652-198E-47AC-8E2C-62BE6B37D91F.jpg" />
+    <Content Include="App_Data\electionlaws.jpg" />
     <Content Include="App_Data\Elections-1280x720.jpg" />
     <Content Include="App_Data\images.jpg" />
+    <Content Include="App_Data\listofparties\all.jpg" />
+    <Content Include="App_Data\listofparties\awami national party.jpg" />
+    <Content Include="App_Data\listofparties\barabri party pak.jpg" />
+    <Content Include="App_Data\listofparties\jamatislami.png" />
+    <Content Include="App_Data\listofparties\paksarzameen.jpg" />
+    <Content Include="App_Data\listofparties\pmln2.jpg" />
+    <Content Include="App_Data\listofparties\ppp.png" />
+    <Content Include="App_Data\listofparties\ppp2.png" />
+    <Content Include="App_Data\listofparties\pti.jpg" />
+    <Content Include="App_Data\listofparties\pti2.jpg" />
     <Content Include="App_Data\logoofEOCP.png" />
+    <Content Include="App_Data\symbols\Sysmbols.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -210,6 +222,16 @@
     <Content Include="Views\Admin\AdminHome.cshtml" />
     <Content Include="Views\Shared\Loginlayout.cshtml" />
     <Content Include="Views\Home\login.cshtml" />
+    <Content Include="Views\Home\howtoregister.cshtml" />
+    <Content Include="Views\Home\how_to_vote.cshtml" />
+    <Content Include="Views\Home\check_for_validation.cshtml" />
+    <Content Include="Views\Home\General_election.cshtml" />
+    <Content Include="Views\Home\Election_laws.cshtml" />
+    <Content Include="Views\Home\Election_Rules.cshtml" />
+    <Content Include="Views\Home\Party_possition.cshtml" />
+    <Content Include="Views\Home\List_of_parties.cshtml" />
+    <Content Include="Views\Home\Symbols.cshtml" />
+    <Content Include="Views\Home\Available_symbols.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
