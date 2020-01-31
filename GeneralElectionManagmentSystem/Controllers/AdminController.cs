@@ -13,5 +13,8 @@ namespace GeneralElectionManagmentSystem.Controllers
         {
             return View();
         }
+
+        
     }
+    
 }
